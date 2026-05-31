@@ -1,0 +1,6 @@
+{
+  "name": "Sentinel Privacy AI",
+  "description": "Privacy-first AI-powered public safety platform balancing security and individual privacy.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-vulcan-50: #ffffff;
+  --color-vulcan-100: rgba(255, 255, 255, 0.9);
+  --color-vulcan-200: rgba(255, 255, 255, 0.6);
+  --color-vulcan-300: rgba(255, 255, 255, 0.4);
+  --color-vulcan-400: rgba(255, 255, 255, 0.3);
+  --color-vulcan-500: rgba(255, 255, 255, 0.2);
+  --color-vulcan-600: rgba(255, 255, 255, 0.15);
+  --color-vulcan-700: rgba(255, 255, 255, 0.1);
+  --color-vulcan-800: rgba(255, 255, 255, 0.05);
+  --color-vulcan-900: rgba(255, 255, 255, 0.03);
+  --color-vulcan-950: #050505;
+  --color-vulcan-DEFAULT: #050505;
+
+  --color-primary-50: #faf5ff;
+  --color-primary-100: #f3e8ff;
+  --color-primary-200: #e9d5ff;
+  --color-primary-300: #d8b4fe;
+  --color-primary-400: #c084fc;
+  --color-primary-500: #a855f7;
+  --color-primary-600: #9333ea;
+  --color-primary-700: #7e22ce;
+  --color-primary-800: #6b21a8;
+  --color-primary-900: #581c87;
+  --color-primary-950: #3b0764;
+  --color-primary-DEFAULT: #a855f7;
+  
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-vulcan-950 text-white font-sans antialiased;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-white/[0.03] backdrop-blur-xl border border-white/10 shadow-xl;
+  }
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-400 to-blue-500;
+  }
+}
